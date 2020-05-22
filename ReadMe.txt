@@ -1,15 +1,15 @@
 Assumptions:
 
-One of the first question raised to consulatant is do I need to connect to a live data source for live stock data updates 
+One of the first question raised to consultant i,s Do I need to connect to a live data source for live stock data updates 
 and storing them in local database or storing sample data in local database and work on them? the answer is 
 "Executing BUY/SELL and see the relevent price listeners are working as expected is the primary goal".
 
 so based on that I have choosen to create a stock table which contains all the sample stock data I want to use for the application.
-the IDEA in 3 simple steps below, 
-1. create a sample stock for e.g. IBM, set price and volume as 50.00 & 1000 respectively.
-2. add priceListener to stock table to listen for price updates on interested stocks and if it reaches the specified threshold execute BUY.
-   Here the price update is done on the particular stock for e.g. IBM and
-3. display the purchased/sold stock on the t_order table to see if the BUY/SELL instruction worked as expected.
+the IDEA is described in 3 simple steps below, 
+
+1. Create a sample stock e.g. IBM, and set name, price and volume to it.
+2. Add priceListener to stock table to listen for price updates on interested stocks and if it reaches the specified threshold execute   BUY. Here the price update is done on the particular stock for e.g. IBM and
+3. Display the purchased/sold stock on the t_order table to see if the BUY/SELL instruction worked as expected.
 
 To implement above steps, 
 
